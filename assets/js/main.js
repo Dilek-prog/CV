@@ -6,13 +6,13 @@ const navMenu = document.getElementById('nav-menu'),
 
 if(navToggle){
     navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu')
+        navMenu.classList.add('show-menu');
     })
 }
 
 if(navClose){
     navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu')
+        navMenu.classList.remove('show-menu');
     })
 }
 
@@ -21,7 +21,7 @@ const navLink = document.querySelectorAll('.nav__link')
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
     // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
+    navMenu.classList.remove('show-menu');
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
@@ -136,7 +136,7 @@ function scrollTopUp(){
 }
 window.addEventListener('scroll', scrollUp)
 
-
+/*
 //Dark Theme
 // Elementverweise
 const themeButton = document.getElementById('theme-button');
@@ -167,3 +167,4 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme());
     localStorage.setItem('selected-icon', getCurrentIcon());
 });
+*/
