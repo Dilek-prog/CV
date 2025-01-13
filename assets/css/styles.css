@@ -263,14 +263,34 @@ body.dark-theme{
             bottom: 0;
         }
     
- 
     }
 
+    @media screen and (max-width: 680px) {
+      .nav__list {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2rem;
+          padding: 0; /* Entfernt möglichen zusätzlichen Platz */
+          margin: 0 auto; /* Zentriert die Liste */
+          max-width: 100%; /* Verhindert Überschreiten der Breite */
+          box-sizing: border-box; /* Stellt sicher, dass Padding berücksichtigt wird */
+          left:0;
+        }
+
+      .nav__close{
+        position: relative;
+        bottom: 0;
+        right: -9rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--first-color);
+      }
+  }
+  
 
   .show-menu {
     bottom: 0;
   }
-
 
 
 .home__container{
