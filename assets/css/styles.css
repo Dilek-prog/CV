@@ -836,6 +836,19 @@ body.dark-theme{
   }
 }
 
+
+.skills___container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Zwei gleich breite Spalten */
+  gap: 20px; /* Abstand zwischen den Spalten */
+}
+
+.skills___content {
+  display: flex;
+  justify-content: space-between; /* Flexbox für die Ausrichtung der Elemente */
+  align-items: center;
+}
+
 .active-modal{
   opacity: 1;
   visibility: visible;
