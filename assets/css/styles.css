@@ -781,6 +781,27 @@ body.dark-theme{
   color: var(--first-color);
   margin-right: var(--mb-0-25);
 }
+
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.brand__name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.brand__description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+
+
 @media (max-width: 768px) {
   .services__content {
       flex-direction: column; /* Stellt sicher, dass die Inhalte untereinander angeordnet sind */
