@@ -713,12 +713,14 @@ body.dark-theme{
   font-size: 1.5rem;
   color: var(--first-color);
   margin-bottom: var(--mb-1);
+  margin-right: 2rem;
 }
 
 .services__title{
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
   font-weight: var(--font-medium);
+  margin-right: 2rem;
 }
 
 .services__button{
@@ -883,16 +885,35 @@ body.dark-theme{
   .button--flex {
     justify-content: center; /* Zentriert den Button-Inhalt */
   }
+
+}
+
+@media (min-width: 300px){
+  .services__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+    font-weight: var(--font-medium);
+    margin-left: 1rem;
+  }
+  .services__icon{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-bottom: var(--mb-1);
+    margin-left: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
+  
+    .services__title {
+        font-size: 1rem; /* Noch kleinere Schriftgröße */
+    }
   .services__icon {
-      font-size: 2rem; /* Kleinere Icons */
+    font-size: 2rem; /* Kleinere Icons */
   }
 
-  .services__title {
-      font-size: 1rem; /* Noch kleinere Schriftgröße */
-  }
+
 
   .services__modal-content {
       width: 90%; /* Vergrößert das Modal auf mobilen Geräten */
