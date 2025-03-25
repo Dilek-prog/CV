@@ -419,6 +419,7 @@ body.dark-theme{
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
+  box-shadow: 3px 4px 10px rgba(0, 7, 0, 0.6);
 }
 
 .about__description{
@@ -686,6 +687,7 @@ body.dark-theme{
 }
 
 .services__container{
+  display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(2,1fr);
 }
@@ -782,24 +784,73 @@ body.dark-theme{
   margin-right: var(--mb-0-25);
 }
 
+.reference {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f4f4; /* Dezenter Hintergrund */
+}
 
-.brand {
+.reference__container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  max-width: 800px; /* Begrenzung der Breite */
+  margin: 10px auto; /* Zentriert die Boxen */
 }
 
-.brand__name {
-  font-size: 18px;
+.reference__container:hover {
+  transform: scale(1.02); /* Leichter Hover-Effekt */
+}
+
+.reference__content {
+  flex: 1;
+  text-align: left;
+}
+
+.reference__brand {
+  font-size: 1.6rem;
   font-weight: bold;
+  color: #333;
 }
 
-.brand__description {
-  font-size: 14px;
-  color: #666;
-  margin-top: 5px;
+.reference__description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
 }
 
+.reference__action {
+  display: flex;
+  align-items: center;
+}
+
+.button--flex {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+  border: none;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .reference__container {
+      flex-direction: grid; /* Stapelt die Elemente untereinander */
+      text-align: center;
+  }
+}
 
 
 @media (max-width: 768px) {
@@ -1219,6 +1270,7 @@ body.dark-theme{
 
   .about__img{
     width: 350px;
+    box-shadow: 3px 4px 10px rgba(0, 7, 0, 0.3);
   }
 
   .about__description{
