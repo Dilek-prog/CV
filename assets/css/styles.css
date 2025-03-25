@@ -298,7 +298,7 @@ body.dark-theme{
 }
 
 .home__content{
-  grid-template-columns: .5fr 3fr;
+  grid-template-columns: .4fr 2fr;
   padding-top: 3.5rem;
   align-items:center;
 }
@@ -840,8 +840,8 @@ body.dark-theme{
   font-weight: bold;
   transition: background 0.3s ease-in-out;
   border: none;
+  margin-top: 1rem;
 }
-
 
 
 
@@ -850,10 +850,6 @@ body.dark-theme{
       flex-direction: grid; /* Stapelt die Elemente untereinander */
       text-align: center;
   }
-}
-
-
-@media (max-width: 768px) {
   .services__content {
       flex-direction: column; /* Stellt sicher, dass die Inhalte untereinander angeordnet sind */
       text-align: center; /* Zentriert Text */
@@ -866,6 +862,26 @@ body.dark-theme{
   .services__button {
       font-size: 0.9rem; /* Kleinere Schriftgröße für den Button */
       margin-top: 1rem;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .reference__container {
+    display: flex;
+    flex-direction: column; /* Stapelt die Elemente vertikal */
+    align-items: center;
+    text-align: center;
+  }
+
+  .reference__action {
+    margin-top: 1rem; /* Abstand nach oben hinzufügen */
+    width: 100%; /* Sorgt dafür, dass der Button die volle Breite nutzen kann */
+    text-align: center;
+  }
+
+  .button--flex {
+    justify-content: center; /* Zentriert den Button-Inhalt */
   }
 }
 
