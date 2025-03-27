@@ -176,6 +176,15 @@ body.dark-theme{
         justify-content: space-between;
         align-items: center;
     }
+    .Logo_nav{
+      width: 150px;
+    }
+    @media (max-width: 768px) {
+      .Logo_nav{
+        width: 90px;
+      }
+    }
+
 
     .nav__log,
     .nav__toggle{
