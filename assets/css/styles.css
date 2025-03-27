@@ -178,7 +178,7 @@ body.dark-theme{
     }
     .Logo_nav{
       width: 115px;
-      margin-top: 20px;
+      margin-top: 15px;
     }
     @media (max-width: 768px) {
       .Logo_nav{
