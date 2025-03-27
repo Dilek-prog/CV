@@ -177,12 +177,13 @@ body.dark-theme{
         align-items: center;
     }
     .Logo_nav{
-      width: 150px;
-      margin-top: 15px;
+      width: 115px;
+      margin-top: 20px;
     }
     @media (max-width: 768px) {
       .Logo_nav{
         width: 90px;
+        margin-bottom: 20px;
       }
     }
 
