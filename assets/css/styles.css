@@ -537,15 +537,15 @@ body.dark-theme{
 }
 
 .skills__css{
-  width: 80%;
+  width: 70%;
 }
 
 .skills__js{
-  width: 60%;
+  width: 50%;
 }
 
 .skills__typescript{
-  width: 60%;
+  width: 50%;
 }
 
 .skills__react{
@@ -561,11 +561,11 @@ body.dark-theme{
 }
 
 .skills__node{
-  width: 50%;
+  width: 40%;
 }
 
 .skills__django{
-  width: 80%;
+  width: 60%;
 }
 
 .skills__mongodb{
@@ -609,6 +609,10 @@ body.dark-theme{
 }
 
 .skills__bitbucket{
+  width: 80%;
+}
+
+.skills__LeanIX SAP{
   width: 80%;
 }
 
@@ -822,7 +826,7 @@ body.dark-theme{
 }
 
 .reference__content {
-  flex: 1;
+  flex: 2;
   text-align: left;
 }
 
@@ -856,6 +860,31 @@ body.dark-theme{
   margin-top: 1rem;
 }
 
+.reference_wrapper {
+  display: flex;
+  justify-content: center; /* Zentriert die Boxen */
+  flex-wrap: wrap; /* Damit sie bei kleinerem Bildschirm umbrechen */
+  gap: 16px; /* Abstand zwischen den Boxen */
+  padding: 20px;
+}
+
+.reference__container_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  max-width: 350px;
+  /*BegrenzungderBreite*/margin: 0px;
+  flex: 1 1 380px;
+}
+
+.reference__container_2:hover {
+  transform: scale(1.02); /* Leichter Hover-Effekt */
+}
 
 
 @media (max-width: 768px) {
